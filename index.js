@@ -4,20 +4,18 @@ let unirelay;
 
 const initWeb3 = () => {
 return new Promise((resolve, reject) => {
-    if(typeof window.ethereum !== 'undefined') {
+    if(window.ethereum) {
       const web3 = new Web3(window.ethereum);
       window.ethereum.enable()
         .then(() => {
-          resolve(
-            new Web3(window.ethereum)
-          );
+          resolve(web3);
         })
         .catch(e => {
           reject(e);
         });
       return;
     }
-    if(typeof window.web3 !== 'undefined') {
+    if(window.web3) {
       return resolve(
         new Web3(window.web3.currentProvider)
       );
