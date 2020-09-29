@@ -381,4 +381,4 @@ var stakingAbi = [
 		"stateMutability": "view",
 		"type": "function"
 	}
-]
+] 
