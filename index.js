@@ -27,7 +27,7 @@ return new Promise((resolve, reject) => {
 }  
 
 const initContract = () => {
-  const contractAddress ='0x6879344353745b1b118821baf0ce90d56e9e6340'
+  const contractAddress ='0xD64a03c6acBDDC4f166ac65E64013B3D3D2Db3c4'
   return new web3.eth.Contract(
     stakingAbi,
     contractAddress
