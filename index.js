@@ -35,7 +35,7 @@ const initContract = () => {
 };
 
 const initContract2 = () => {
-    const contractAddress ='0x6f53C2a29CA2411519392DDf7f981a112A0973E1'
+    const contractAddress ='0x84cB04312a329fb9008fb2F78a575B1a72c20460'
     return new web3.eth.Contract(
       unirelayAbi,
       contractAddress
