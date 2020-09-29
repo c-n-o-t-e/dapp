@@ -1,0 +1,146 @@
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <link href='https://fonts.googleapis.com/css?family=Comfortaa' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=Pacifico' rel='stylesheet'>
+    <script src="web3.js"></script>
+    <script src="index.js"></script>
+    <script src="stakingAbis.js"></script>
+    <script src="unirelayAbis.js"></script>
+  </head>
+  <body>
+    
+    <h1>Unirelay Staking dApp</h1><br>
+    <div class="main-card">
+        <div class="pos">
+            <div>
+                <button id="stakes" type="submit">Total Stakes</button>      
+                <p id="stakes-result"></p>
+            </div>
+
+            <div>
+                <button id="pool" type="submit">Staking Pool</button>  
+                <p id="pool-result"></p>
+            </div>
+
+            <div>
+                <button id="index" type="submit">Stakeholder Index</button> 
+                <p id="index-result"></p>
+            </div>
+
+            <div>
+                <button id="minimum" type="submit">Minimum Stake</button>
+                <p id="minimum-result"></p>
+            </div>
+        </div><br><br>
+
+        <div class="pos">
+            <div>
+                <button id="weekly" type="submit">Share Weekly Reward</button>      
+                <p id="weekly-result"></p>
+            </div>
+
+            <div>
+                <button id="reward" type="submit">Get Reward For The Week</button>  
+                <p id="reward-result"></p>
+            </div>
+            
+            <div>
+                <button id="bonus" type="submit">Get Referral Bouns</button> 
+                <p id="bonus-result"></p>
+            </div>
+
+            <div>
+                <button id="withdraw" type="submit">Withdraw Reward</button>
+                <p id="withdraw-result"></p>
+            </div>
+        </div>
+    </div><br><br>
+  
+
+    <div class="main-card">
+        
+        <h2>You must first approve your stake before staking...</h2>
+        <div class="pos">
+
+            <div>
+                <h3>Approve Stake</h3>
+                <form id='approve'>
+                    <input type="" placeholder="enter amount">
+                    <button type="submit">Submit</button>
+                    <p id="approve-result"></p>
+                </form> 
+            </div>
+
+            <div>
+                <h3>Stake</h3>
+                <form id='stake'>
+                    <input type="" placeholder="enter amount">
+                    <input type="" placeholder="enter refferal address">
+                    <button type="submit">Submit</button>
+                    <p id="stake-result"></p>
+                </form>
+            </div>
+        </div>
+
+        <div class="pos">
+            <div>
+                <h3>UnStake</h3>
+                <form id='unstake'>
+                    <!-- <input type="" placeholder="enter address"> -->
+                    <input type="" placeholder="enter refferal address">
+                    <button type="submit">Submit</button>
+                    <p id="unstake-result"></p>
+                </form> 
+            </div>     
+            <div >
+                <h3>Stake Of</h3>
+                <form id='stakeOf'>
+                    <input type="" placeholder="enter address">
+                    <button type="submit">Submit</button>
+                    <p id="stakeOf-result"></p>      
+                </form> 
+            </div>
+        </div>
+
+        <div class="pos">
+            <div >
+                <h3>Reward Of</h3>
+                <form id='rewardOf'>
+                    <input type="" placeholder="enter address">
+                    <button type="submit">Submit</button>
+                    <p id="rewardOf-result"></p>
+                </form>
+            </div>
+            <div >
+                <h3>Stakeholder Referral Bonus</h3>
+                <form id='refferal'>
+                    <input type="" placeholder="enter address">
+                    <button type="submit">Submit</button>
+                    <p id="refferal-result"></p>      
+                </form> 
+            </div>
+        </div>
+
+        <div class="pos">
+            <div >
+                <h3>Stakeholder Referral Count</h3>
+                <form id='refferalList'>
+                    <input type="" placeholder="enter address">
+                    <button type="submit">Submit</button>
+                    <p id="refferalList-result"></p>
+                </form>
+            </div>
+            <div>
+            <h3>Check If Stakeholder</h3>
+            <form id='IfStakeholder'>
+                <input type="" placeholder="enter address">
+                <button type="submit">Submit</button>
+                <p id="IfStakeholder-result"></p>
+            </form>
+            </div>
+        </div>
+    </div><br><br><br>
+  </body>
+</html>
